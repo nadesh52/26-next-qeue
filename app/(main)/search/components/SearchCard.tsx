@@ -1,15 +1,19 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
-const ItemCard = () => {
+const SearchCard = () => {
   return (
     <div className="flex flex-col rounded-md p-2 shadow-md">
-      <div className="flex items-center justify-between mb-2">
+      <div className="mb-2 flex items-center justify-between">
         <p className="text-sm text-slate-400">
-          Item ID: <span className="font-medium">345345</span>
+          Listed on: <span>05/10/2024</span>
         </p>
         <p className="text-sm text-slate-400">
-          Listed: <span>05/10/2024</span>
+          Listed by:{" "}
+          <Link href="/u/go" className="hover:text-amber-400">
+            u/go
+          </Link>
         </p>
       </div>
       <div className="flex gap-4 bg-white">
@@ -21,7 +25,7 @@ const ItemCard = () => {
           <div className="flex justify-between gap-4">
             <div className="flex-1 rounded-md bg-slate-100 p-2">
               <p className="text-lg">
-                Lorem ipsum dolor sit, elit. aliquam numquam culpa iure
+              DC Batman 85th Anniversary Series Figures
               </p>
             </div>
 
@@ -45,4 +49,4 @@ const ItemCard = () => {
   );
 };
 
-export default ItemCard;
+export default SearchCard;

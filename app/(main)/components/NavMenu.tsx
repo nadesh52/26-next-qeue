@@ -13,7 +13,7 @@ const NavMenu = () => {
       <Link href="/" className={`${basePath === "/" ? "active" : "inactive"}`}>
         <div className="pointer-events-none flex h-16 w-full items-center gap-6 p-4">
           <HomeIcon className="size-6" />
-          <div>Home</div>
+          <p className="text-xl tracking-wide">Home</p>
         </div>
       </Link>
 
@@ -23,14 +23,14 @@ const NavMenu = () => {
       >
         <div className="pointer-events-none flex h-16 w-full items-center gap-6 p-4">
           <MagnifyingGlassIcon className="size-6" />
-          <div>Search</div>
+          <p className="text-xl tracking-wide">Search</p>
         </div>
       </Link>
 
       <Link href="/u" className={`${basePath === "/u" ? "active" : "inactive"}`}>
         <div className="pointer-events-none flex h-16 w-full items-center gap-6 p-4">
           <UserIcon className="size-6" />
-          <div>U</div>
+          <p className="text-xl tracking-wide">U</p>
         </div>
       </Link>
     </nav>

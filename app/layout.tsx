@@ -1,7 +1,5 @@
 import "@/styles/globals.css";
 import SideMenu from "./(main)/components/SideMenu";
-import Content from "./(main)/components/HomePage";
-import SideUpdate from "./(main)/components/SideUpdate";
 
 export const metadata = {
   title: "Queue",
