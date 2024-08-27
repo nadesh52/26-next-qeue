@@ -9,3 +9,14 @@ html {
   line-height: 20px;
   /* color: #0c2d57; */
 }
+
+
+@layer components {
+  .active {
+    @apply shadow-[-2px_0px_0px_rgba(251,191,36,1)] text-amber-400 font-medium
+  }
+
+  .inactive {
+    @apply shadow-none text-black font-normal
+  }
+}
