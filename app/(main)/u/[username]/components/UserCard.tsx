@@ -22,6 +22,7 @@ const UserCard = ({ name }: any) => {
           <p>{`@${name}`}</p>
         </div>
       </div>
+      
       <div>
         <div className="flex gap-2">
           <div className="rounded-md bg-blue-200 p-2">good</div>

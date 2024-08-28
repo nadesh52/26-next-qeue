@@ -19,18 +19,11 @@ const NavMenu = () => {
 
       <Link
         href="/search"
-        className={`${basePath === "/search" ? "active" : "inactive"}`}
+        className={`${basePath === "/search" || basePath === '/u' ? "active" : "inactive"}`}
       >
         <div className="pointer-events-none flex h-16 w-full items-center gap-6 p-4">
           <MagnifyingGlassIcon className="size-6" />
           <p className="text-xl tracking-wide">Search</p>
-        </div>
-      </Link>
-
-      <Link href="/u" className={`${basePath === "/u" ? "active" : "inactive"}`}>
-        <div className="pointer-events-none flex h-16 w-full items-center gap-6 p-4">
-          <UserIcon className="size-6" />
-          <p className="text-xl tracking-wide">U</p>
         </div>
       </Link>
     </nav>

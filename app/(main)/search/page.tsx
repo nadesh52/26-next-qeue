@@ -12,7 +12,7 @@ const SearchPage = () => {
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     //fetch
-        //setData();
+    //setData();
   };
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -21,7 +21,7 @@ const SearchPage = () => {
   };
 
   return (
-    <section className="rounded-md bg-white p-4 shadow-md">
+    <section className="space-y-4 rounded-md bg-white p-4">
       <form onSubmit={handleSubmit}>
         <Title>Search</Title>
         <TextInput type="text" onChange={handleChange} />
@@ -29,7 +29,6 @@ const SearchPage = () => {
 
       <div>
         <Title>Result for "{input}"</Title>
-
         <SearchList />
       </div>
     </section>
